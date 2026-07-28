@@ -1,0 +1,103 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1c2e"/>
+      <stop offset="55%" stop-color="#16283d"/>
+      <stop offset="100%" stop-color="#0a141f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#66c0f4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#66c0f4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="keyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd76a"/>
+      <stop offset="50%" stop-color="#f2a93c"/>
+      <stop offset="100%" stop-color="#c47a1a"/>
+    </linearGradient>
+    <linearGradient id="keyEdge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff3d0"/>
+      <stop offset="100%" stop-color="#e0a94a"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#eaf6ff"/>
+      <stop offset="100%" stop-color="#9fd8ff"/>
+    </linearGradient>
+    <radialGradient id="shieldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3ddc84" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#3ddc84" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#glow)"/>
+
+  <!-- circuit grid backdrop -->
+  <g stroke="#2a4460" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="780" y1="0" x2="780" y2="360"/>
+    <line x1="950" y1="0" x2="950" y2="360"/>
+    <path d="M780 60 L820 60 L820 100 L900 100" fill="none"/>
+    <path d="M950 300 L910 300 L910 250 L860 250" fill="none"/>
+    <path d="M1140 150 L1080 150 L1080 190 L1000 190" fill="none"/>
+  </g>
+  <g fill="#3a6a92">
+    <circle cx="820" cy="100" r="3"/>
+    <circle cx="900" cy="100" r="3"/>
+    <circle cx="910" cy="250" r="3"/>
+    <circle cx="860" cy="250" r="3"/>
+    <circle cx="1080" cy="150" r="3"/>
+    <circle cx="1000" cy="190" r="3"/>
+  </g>
+
+  <!-- floating binary particles -->
+  <g fill="#66c0f4" opacity="0.35" font-family="'Segoe UI', Arial, sans-serif" font-size="14">
+    <text x="770" y="60">01</text>
+    <text x="1000" y="90">10</text>
+    <text x="1100" y="230">01</text>
+    <text x="820" y="290">11</text>
+    <text x="950" y="330">10</text>
+  </g>
+
+  <!-- shield / validation check -->
+  <g transform="translate(1010,110)" opacity="0.9">
+    <circle cx="0" cy="60" r="70" fill="url(#shieldGlow)"/>
+    <path d="M0 5 L45 22 L45 65 Q45 105 0 125 Q-45 105 -45 65 L-45 22 Z" fill="#12324a" stroke="#3ddc84" stroke-width="2.5"/>
+    <path d="M-20 62 L-5 78 L25 42" fill="none" stroke="#3ddc84" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- large stylized key shape -->
+  <g transform="translate(905,205) rotate(-18)">
+    <circle cx="0" cy="0" r="46" fill="none" stroke="url(#keyGrad)" stroke-width="14"/>
+    <circle cx="0" cy="0" r="14" fill="#16283d"/>
+    <rect x="40" y="-9" width="150" height="18" fill="url(#keyEdge)"/>
+    <rect x="150" y="9" width="14" height="26" fill="url(#keyEdge)"/>
+    <rect x="172" y="9" width="14" height="34" fill="url(#keyEdge)"/>
+    <rect x="40" y="-9" width="150" height="4" fill="#fff8e2" opacity="0.6"/>
+  </g>
+
+  <!-- steam particles rising -->
+  <g fill="none" stroke="#66c0f4" stroke-width="2" opacity="0.5" stroke-linecap="round">
+    <path d="M760 260 Q750 230 765 205 Q778 182 765 155"/>
+    <path d="M800 275 Q790 245 805 218 Q818 195 805 168"/>
+  </g>
+
+  <!-- headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="700" fill="url(#titleGrad)" textLength="700" lengthAdjust="spacingAndGlyphs">Steam Key Generator</text>
+
+  <!-- accent underline -->
+  <rect x="62" y="172" width="360" height="5" fill="#66c0f4" opacity="0.8"/>
+  <rect x="62" y="172" width="120" height="5" fill="#f2a93c"/>
+
+  <!-- tagline -->
+  <text x="60" y="222" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#c9dced" textLength="700" lengthAdjust="spacingAndGlyphs">Generates lightweight Steam key generator with built-in</text>
+  <text x="60" y="256" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#c9dced" textLength="300" lengthAdjust="spacingAndGlyphs">validation — single binary</text>
+
+  <!-- small tag chips -->
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#0f1c2e">
+    <rect x="62" y="280" width="96" height="28" rx="14" fill="#66c0f4"/>
+    <text x="78" y="299">single-file</text>
+    <rect x="168" y="280" width="118" height="28" rx="14" fill="#f2a93c"/>
+    <text x="184" y="299">validated keys</text>
+  </g>
+</svg>
